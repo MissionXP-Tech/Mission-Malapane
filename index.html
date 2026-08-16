@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pera Mission Malapane — Data science & analytics</title>
+  <meta name="description" content="Pera Mission Malapane — Freelance data science, analytics & full-stack. Web design, logo creation, and landing pages." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="name">Pera Mission Malapane</h1>
+        <p class="tagline">Data science & analytics · Freelance · Full‑stack</p>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Turning data into decisions — and beautiful products.</h2>
+          <p>Hi — I'm Pera. I build end‑to‑end data products: data engineering, predictive models, APIs, dashboards, web design, logos and landing pages for businesses and startups.</p>
+          <div class="cta">
+            <a class="btn" href="#contact">Contact</a>
+            <a class="btn outline" href="#projects">View projects</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <!-- Placeholder avatar; replace with your image -->
+          <img src="https://via.placeholder.com/220x220.png?text=PM" alt="Pera Mission Malapane" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h3>What I do</h3>
+      <ul class="what-i-do">
+        <li>Freelance data science & analytics: predictive modeling, A/B testing, forecasting, experimental design</li>
+        <li>Data engineering & ETL: pipelines, data cleaning, schema design</li>
+        <li>Full‑stack applications: APIs, dashboards, and production deployment</li>
+        <li>Data visualization & BI: interactive dashboards and executive reporting</li>
+        <li>Web designing, logo creation, and web landing pages</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h3>Skills</h3>
+        <div class="skills-grid">
+          <div>
+            <h4>Data science & analytics</h4>
+            <ul>
+              <li>Python, pandas, NumPy, scikit‑learn, XGBoost, TensorFlow/PyTorch</li>
+              <li>Statistical modeling, time series, causal inference</li>
+              <li>SQL, PostgreSQL, BigQuery</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BI & visualization</h4>
+            <ul>
+              <li>Tableau, Power BI, Plotly, Dash</li>
+              <li>Storytelling with data, interactive charts & dashboards</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <h3>Featured projects</h3>
+      <p class="muted">Top public repos from your account (replace descriptions or links if you prefer other repos).</p>
+      <div class="projects-grid">
+        <article class="card">
+          <h4><a href="https://github.com/MissionXP-Tech/import-json" target="_blank" rel="noopener">import-json</a></h4>
+          <p>No description provided. Replace with a short summary (e.g., utility to import JSON data into pipelines).</p>
+          <p class="muted">Updated: 2026-08-07</p>
+        </article>
+
+        <article class="card">
+          <h4><a href="https://github.com/MissionXP-Tech/betaflight" target="_blank" rel="noopener">betaflight</a></h4>
+          <p>Open Source Flight Controller Firmware (fork). Useful if you want to show embedded / firmware work or contributions to UAV software.</p>
+          <p class="muted">Updated: 2026-07-31</p>
+        </article>
+
+        <article class="card">
+          <h4><a href="https://github.com/MissionXP-Tech/Hello-World" target="_blank" rel="noopener">Hello-World</a></h4>
+          <p>Repository: Hello World — starter project. Replace with a more descriptive project or remove if not relevant.</p>
+          <p class="muted">Updated: 2026-07-22</p>
+        </article>
+
+        <article class="card">
+          <h4><a href="https://github.com/MissionXP-Tech/build-your-own-x" target="_blank" rel="noopener">build-your-own-x</a></h4>
+          <p>Master programming by recreating your favorite technologies from scratch — educational collection of projects and exercises.</p>
+          <p class="muted">Updated: 2026-07-14</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container contact-grid">
+        <div>
+          <h3>Contact</h3>
+          <p>Interested in working together? I take freelance projects for analytics, full‑stack and web design.</p>
+          <p>Email: <a href="mailto:Malapaneperamissionjay@gmail.com">Malapaneperamissionjay@gmail.com</a></p>
+        </div>
+        <div>
+          <h4>Quick links</h4>
+          <ul class="links">
+            <li>Website / Portfolio (replace): <a href="https://your-portfolio.example.com" target="_blank" rel="noopener">your-portfolio.example.com</a></li>
+            <li>LinkedIn (replace): <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">linkedin.com/in/your-profile</a></li>
+            <li>GitHub: <a href="https://github.com/MissionXP-Tech" target="_blank" rel="noopener">github.com/MissionXP-Tech</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Pera Mission Malapane — Freelance data science & analytics</p>
+    </div>
+  </footer>
+
+  <script>
+    // set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
