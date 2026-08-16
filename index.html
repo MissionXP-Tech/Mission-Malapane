@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Pera Mission Malapane — Data science & analytics</title>
   <meta name="description" content="Pera Mission Malapane — Freelance data science, analytics & full-stack. Web design, logo creation, and landing pages." />
+
+  <!-- Open Graph / Social preview (placeholder image) -->
+  <meta property="og:title" content="Pera Mission Malapane — Data science & analytics">
+  <meta property="og:description" content="Freelance data science, analytics & full-stack. Web design, logo creation, and landing pages.">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Pera+Mission+Malapane">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pera Mission Malapane — Data science & analytics">
+  <meta name="twitter:description" content="Freelance data science, analytics & full-stack. Web design, logo creation, and landing pages.">
+  <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=Pera+Mission+Malapane">
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -111,7 +124,30 @@
         <div>
           <h3>Contact</h3>
           <p>Interested in working together? I take freelance projects for analytics, full‑stack and web design.</p>
-          <p>Email: <a href="mailto:Malapaneperamissionjay@gmail.com">Malapaneperamissionjay@gmail.com</a></p>
+
+          <!-- Contact form (Formspree placeholder) -->
+          <!-- Replace {form_id} with your Formspree form ID: https://formspree.io/ -->
+          <form class="contact-form" method="POST" action="https://formspree.io/f/{form_id}">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project" required></textarea>
+
+            <!-- Optional: subject for the received email -->
+            <input type="hidden" name="_subject" value="New contact from website" />
+
+            <!-- Honeypot field to reduce spam -->
+            <input type="text" name="_gotcha" style="display:none" />
+
+            <button type="submit" class="btn">Send message</button>
+          </form>
+
+          <p class="form-note">If you prefer, email me directly at <a href="mailto:Malapaneperamissionjay@gmail.com">Malapaneperamissionjay@gmail.com</a></p>
+
         </div>
         <div>
           <h4>Quick links</h4>
@@ -134,6 +170,13 @@
   <script>
     // set current year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Optional: intercept form submission to show a friendly message (Client-side only)
+    document.addEventListener('submit', function(e){
+      if (e.target && e.target.classList.contains('contact-form')){
+        // allow normal submit to Formspree; no further client-side handling for now
+      }
+    });
   </script>
 </body>
 </html>
